@@ -66,7 +66,7 @@ public class MarbleManager : MonoBehaviour
         {
             rb.mass = 2000f;
             //rb.AddRelativeForce(Vector3.forward * 1f);
-            this.gameObject.transform.localScale = new Vector3(4f, 4f, 4f);
+            this.gameObject.transform.localScale = new Vector3(6f, 6f, 6f);
             Physics.gravity = new Vector3(0, -0.25F, 0);
         }
     }
