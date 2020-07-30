@@ -18,7 +18,7 @@ public class MarbleManager : MonoBehaviour
         {
             rb.mass = 1f;
             //rb.AddRelativeForce(Vector3.forward * 10f);
-            this.gameObject.transform.localScale = new Vector3(1f, 1f, 1f);
+            this.gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
             Physics.gravity = new Vector3(0, -1500.0F, 0);
         }
 
@@ -26,7 +26,7 @@ public class MarbleManager : MonoBehaviour
         {
             rb.mass = 250f;
             //rb.AddRelativeForce(Vector3.forward * 8f);
-            this.gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            this.gameObject.transform.localScale = new Vector3(2f, 2f, 2f);
             Physics.gravity = new Vector3(0, -1250.0F, 0);
         }
 
@@ -34,7 +34,7 @@ public class MarbleManager : MonoBehaviour
         {
             rb.mass = 500f;
             //rb.AddRelativeForce(Vector3.forward * 6f);
-            this.gameObject.transform.localScale = new Vector3(2f, 2f, 2f);
+            this.gameObject.transform.localScale = new Vector3(3f, 3f, 3f);
             Physics.gravity = new Vector3(0, -1000.0F, 0);
         }
 
@@ -42,7 +42,7 @@ public class MarbleManager : MonoBehaviour
         {
             rb.mass = 750f;
             //rb.AddRelativeForce(Vector3.forward * 4f);
-            this.gameObject.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
+            this.gameObject.transform.localScale = new Vector3(4f, 4f, 4f);
             Physics.gravity = new Vector3(0, -750.0F, 0);
         }
 
@@ -50,7 +50,7 @@ public class MarbleManager : MonoBehaviour
         {
             rb.mass = 1000f;
             //rb.AddRelativeForce(Vector3.forward * 3f);
-            this.gameObject.transform.localScale = new Vector3(3f, 3f, 3f);
+            this.gameObject.transform.localScale = new Vector3(5f, 5f, 5f);
             Physics.gravity = new Vector3(0, -500.0F, 0);
         }
 
@@ -58,7 +58,7 @@ public class MarbleManager : MonoBehaviour
         {
             rb.mass = 1500f;
             //rb.AddRelativeForce(Vector3.forward * 2f);
-            this.gameObject.transform.localScale = new Vector3(3.5f, 3.5f, 3.5f);
+            this.gameObject.transform.localScale = new Vector3(5.5f, 5.5f, 5.5f);
             Physics.gravity = new Vector3(0, -250.0F, 0);
         }
 
