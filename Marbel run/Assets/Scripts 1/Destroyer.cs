@@ -9,8 +9,8 @@ public class Destroyer : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Destroy(other.gameObject);
-            SceneManager.LoadScene("Level1");
+            //Destroy(other.gameObject);
+              SceneManager.LoadScene("Level1");
         }
     }
 }

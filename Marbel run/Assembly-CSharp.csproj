@@ -68,6 +68,7 @@
     <Compile Include="Assets\PathCreator\Examples\Scripts\PathSceneTool.cs" />
     <Compile Include="Assets\PathCreator\Examples\Scripts\PathSpawner.cs" />
     <Compile Include="Assets\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
+    <Compile Include="Assets\Scripts 1\AIcontroller.cs" />
     <Compile Include="Assets\Scripts 1\CameraController.cs" />
     <Compile Include="Assets\Scripts 1\CameraController2.cs" />
     <Compile Include="Assets\Scripts 1\Destroyer.cs" />

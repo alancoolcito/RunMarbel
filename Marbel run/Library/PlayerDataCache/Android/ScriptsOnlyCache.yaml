@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraController
+    - Destroyer
     - SliderScale
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
@@ -67,6 +68,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11150}
     - Class: 114
       Script: {instanceID: 11390}
+    - Class: 114
+      Script: {instanceID: 11648}
     - Class: 114
       Script: {instanceID: 11708}
     - Class: 114
