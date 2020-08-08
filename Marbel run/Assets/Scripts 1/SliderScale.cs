@@ -11,6 +11,8 @@ public class SliderScale : MonoBehaviour
 
     public float newThrust;
 
+    public Joystick joystick;
+
     [SerializeField]
     private GameObject Sphere;
     public GameObject Marble;
@@ -28,17 +30,34 @@ public class SliderScale : MonoBehaviour
         Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
 
         newThrust = thrust / scaleValue;
-
-        //rb.AddForce(followCamera.transform.forward * newThrust * 300);
+        rb.mass = scaleValue * 12;
 
         rb.AddForce(followCamera.transform.forward * newThrust/4, ForceMode.VelocityChange);
 
+        if (joystick.Vertical >= .3f && scaleValue <= 6f)
+        {
+            scaleValue += 0.05f;
+        }
+
+        if (joystick.Vertical <= -.3f && scaleValue >= 1f)
+        {
+            scaleValue -= 0.05f;
+        }
+
+        if(joystick.Horizontal >= .1)
+        {
+            rb.AddForce(followCamera.transform.right * 1.5f, ForceMode.Acceleration);
+        }
+
+        if (joystick.Horizontal <= -.1)
+        {
+            rb.AddForce(followCamera.transform.right * -1.5f, ForceMode.Acceleration);
+        }
     }
 
-    public void setScale(float scale)
-    {
-        //thrust /= scale;
-        scaleValue = scale;
-        rb.mass = scale*10; 
-    }
+    //public void setScale(float scale)
+    //{
+    //    scaleValue = scale;
+    //    rb.mass = scale*10; 
+    //}
 }
