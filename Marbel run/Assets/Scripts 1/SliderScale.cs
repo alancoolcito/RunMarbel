@@ -29,7 +29,7 @@ public class SliderScale : MonoBehaviour
 
         Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
 
-        newThrust = thrust / scaleValue;
+        newThrust = thrust / scaleValue/2f;
         rb.mass = scaleValue * 12;
 
         rb.AddForce(followCamera.transform.forward * newThrust/4, ForceMode.VelocityChange);
