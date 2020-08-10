@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts 1\Destroyer.cs" />
     <Compile Include="Assets\Scripts 1\MarbleManager.cs" />
     <Compile Include="Assets\Scripts 1\SliderScale.cs" />
+    <Compile Include="Assets\Scripts 1\SnapToGround.cs" />
     <Compile Include="Assets\SplineMesh\Scripts\Bezier\CubicBezierCurve.cs" />
     <Compile Include="Assets\SplineMesh\Scripts\Bezier\CurveSample.cs" />
     <Compile Include="Assets\SplineMesh\Scripts\Bezier\Spline.cs" />
