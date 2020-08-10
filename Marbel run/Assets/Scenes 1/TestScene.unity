@@ -2838,8 +2838,6 @@ MonoBehaviour:
   thrust: 5
   newThrust: 0
   rb: {fileID: 1320270125}
-  Sphere: {fileID: 0}
-  Marble: {fileID: 0}
   followCamera: {fileID: 735579157}
 --- !u!33 &1320270129
 MeshFilter:
@@ -3246,7 +3244,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741187410}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
@@ -3289,8 +3287,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 427503880}
-        m_MethodName: setScale
+      - m_Target: {fileID: 0}
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

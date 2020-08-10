@@ -8,7 +8,7 @@ public class MarbleManager : MonoBehaviour
     public Rigidbody rb;
     private float scaleValue = 1f;
     [SerializeField]
-    private GameObject Marble;
+    //private GameObject Marble;
     void Start()
     {
 
@@ -16,7 +16,7 @@ public class MarbleManager : MonoBehaviour
 
     void Update()
     {
-        Marble.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
+        //Marble.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
     }
 
     public void setScale(float scale)

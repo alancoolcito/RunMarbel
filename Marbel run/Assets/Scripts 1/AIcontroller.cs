@@ -11,8 +11,6 @@ public class AIcontroller : MonoBehaviour
     private float scaleValue = 3f;
 
     [SerializeField]
-    private GameObject Sphere;
-    public GameObject Marble;
     public Camera followCamera;
 
 
