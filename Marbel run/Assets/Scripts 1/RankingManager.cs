@@ -8,6 +8,7 @@ public class RankingManager : MonoBehaviour
     private GameObject[] checkPoints;
     [SerializeField]
     private GameObject[] allMarbels;
+
     void Start()
     {
 
