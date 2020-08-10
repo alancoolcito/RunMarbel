@@ -3802,12 +3802,12 @@ PrefabInstance:
         type: 3}
       propertyPath: rb
       value: 
-      objectReference: {fileID: 427503878}
+      objectReference: {fileID: 0}
     - target: {fileID: 34028550302893230, guid: e6f7bf065d3a1a04f8c8128fdca74276,
         type: 3}
       propertyPath: rbAI
       value: 
-      objectReference: {fileID: 1320270125}
+      objectReference: {fileID: 0}
     - target: {fileID: 34028550302893231, guid: e6f7bf065d3a1a04f8c8128fdca74276,
         type: 3}
       propertyPath: m_ProbeAnchor

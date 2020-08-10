@@ -11,13 +11,17 @@ public class SpeedBoosterPlatform : MonoBehaviour
 
 
 
-        public void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
+    {
+        if ((other.gameObject.tag == "Player") || (other.gameObject.tag == "AI"))
         {
-            if ((other.gameObject.tag == "Player") || (other.gameObject.tag == "AI"))
+            var tempRigid = other.attachedRigidbody;
+            if (tempRigid != null)
             {
-            rb.AddForce(boost,0,0,ForceMode.Impulse);
-            rbAI.AddForce(boost, 0, 0, ForceMode.Impulse);
-           // other.attachedRigidbody.AddForce(boost, 0, 0, ForceMode.Impulse);
+               // rb.AddForce(boost, 0, 0, ForceMode.Impulse);
+               // rbAI.AddForce(boost, 0, 0, ForceMode.Impulse);
+                 other.attachedRigidbody.AddForce(boost, 0, 0, ForceMode.Impulse);
+            }
         }
     }    
 }
