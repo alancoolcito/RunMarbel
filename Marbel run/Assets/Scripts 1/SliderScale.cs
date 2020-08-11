@@ -17,7 +17,7 @@ public class SliderScale : MonoBehaviour
     private GameObject Sphere;
     public GameObject Marble;
     public Camera followCamera;
-    public Transform target;
+    //public Transform target;
     public float offset = 2f;
 
     void Start()
@@ -28,17 +28,17 @@ public class SliderScale : MonoBehaviour
 
     void Update()
     {
-        followCamera.transform.position = new Vector3(target.position.x-offset, target.position.y, target.position.z);
+        //followCamera.transform.position = new Vector3(target.position.x-offset, target.position.y, target.position.z);
        // followCamera.transform.eulerAngles = new Vector3(target.transform.rotation.x, target.transform.rotation.y, 0);
 
         scaleVector = new Vector3(scaleValue, scaleValue, scaleValue);
 
         Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
 
-        newThrust = thrust / scaleValue/2f;
+        newThrust = thrust / scaleValue;
         rb.mass = scaleValue * 12;
 
-        rb.AddForce(followCamera.transform.forward * newThrust/4, ForceMode.VelocityChange);
+        rb.AddForce(followCamera.transform.forward * newThrust/2, ForceMode.VelocityChange);
 
         if (joystick.Vertical >= .1f && scaleValue <= 6f)
         {
@@ -50,12 +50,12 @@ public class SliderScale : MonoBehaviour
             scaleValue -= 0.08f;
         }
 
-        if(joystick.Horizontal >= .1)
+        if(joystick.Horizontal >= .8)
         {
             rb.AddForce(followCamera.transform.right * 3f, ForceMode.Acceleration);
         }
 
-        if (joystick.Horizontal <= -.1)
+        if (joystick.Horizontal <= -.8)
         {
             rb.AddForce(followCamera.transform.right * -3f, ForceMode.Acceleration);
         }
