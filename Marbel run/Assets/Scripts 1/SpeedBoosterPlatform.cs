@@ -6,8 +6,6 @@ using UnityEngine;
 public class SpeedBoosterPlatform : MonoBehaviour
 {
     public float boost = 1000f;
-    public Rigidbody rb;
-    public Rigidbody rbAI;
 
 
 

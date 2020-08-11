@@ -17,6 +17,8 @@ public class SliderScale : MonoBehaviour
     private GameObject Sphere;
     public GameObject Marble;
     public Camera followCamera;
+    public Transform target;
+    public float offset = 2f;
 
     void Start()
     {
@@ -26,6 +28,9 @@ public class SliderScale : MonoBehaviour
 
     void Update()
     {
+        followCamera.transform.position = new Vector3(target.position.x-offset, target.position.y, target.position.z);
+       // followCamera.transform.eulerAngles = new Vector3(target.transform.rotation.x, target.transform.rotation.y, 0);
+
         scaleVector = new Vector3(scaleValue, scaleValue, scaleValue);
 
         Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
