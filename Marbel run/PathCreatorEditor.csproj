@@ -634,11 +634,11 @@
     <Reference Include="Boo.Lang">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Users/rider/Documents/GitHub/RunMarbel/Marbel run/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Users/rider/Documents/GitHub/RunMarbel/Marbel run/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/Users/rider/Documents/GitHub/RunMarbel/Marbel run/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/Users/rider/Documents/GitHub/RunMarbel/Marbel run/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
