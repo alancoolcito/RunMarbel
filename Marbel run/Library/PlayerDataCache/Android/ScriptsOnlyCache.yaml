@@ -1,9 +1,15 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - CameraController
+    - AIcontroller
     - Destroyer
+    - EndRound
+    - FloatingJoystick
+    - Gravity
+    - RankingManager
     - SliderScale
+    - SpeedBoosterPlatform
+    - Timer
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineComposer
@@ -30,6 +36,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes 1/Level1.unity:
     - Class: 1
@@ -58,41 +65,61 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11148}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11150}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11390}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 11648}
+      Script: {instanceID: 11568}
     - Class: 114
-      Script: {instanceID: 11708}
+      Script: {instanceID: 11618}
     - Class: 114
-      Script: {instanceID: 11842}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 12040}
+      Script: {instanceID: 11880}
     - Class: 114
-      Script: {instanceID: 12104}
+      Script: {instanceID: 11924}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 11942}
     - Class: 114
-      Script: {instanceID: 12678}
+      Script: {instanceID: 11974}
     - Class: 114
-      Script: {instanceID: 12808}
+      Script: {instanceID: 12080}
     - Class: 114
-      Script: {instanceID: 12926}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 13294}
+      Script: {instanceID: 12280}
     - Class: 114
-      Script: {instanceID: 13320}
+      Script: {instanceID: 12298}
     - Class: 114
-      Script: {instanceID: 13358}
+      Script: {instanceID: 12346}
+    - Class: 114
+      Script: {instanceID: 12442}
+    - Class: 114
+      Script: {instanceID: 12924}
+    - Class: 114
+      Script: {instanceID: 13176}
+    - Class: 114
+      Script: {instanceID: 13470}
+    - Class: 114
+      Script: {instanceID: 13548}
+    - Class: 114
+      Script: {instanceID: 13576}
+    - Class: 114
+      Script: {instanceID: 13614}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 134
       Script: {instanceID: 0}
@@ -113,7 +140,13 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 54962f4e7713ea3724657f8a5314a6af
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Joystick
+  - hash:
+      serializedVersion: 2
+      Hash: a21a047dd3874b24263340740c8d4706
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SliderScale
@@ -129,6 +162,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: PathCreation.Examples
     className: PathSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: df596028cb123c5cdd5c59a54a542f94
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpeedBoosterPlatform
   - hash:
       serializedVersion: 2
       Hash: 23d669c8bf2983ca4a3df160658318a6
@@ -317,6 +356,12 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 9e27f44bbf48228f203a37254d40f8ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickSetterExample
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -327,6 +372,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Gravity
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -347,7 +398,7 @@ ScriptsOnlyBuild:
     className: Destroyer
   - hash:
       serializedVersion: 2
-      Hash: 4941eaf0f8ccf1e15b1d6bff18e2b9ee
+      Hash: c7faad5ded3055716c4bdef4ad735515
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MarbleManager
@@ -357,6 +408,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 50848f87f07aa5bcd75fc515b7ac1cff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Timer
   - hash:
       serializedVersion: 2
       Hash: 666a1bc8d46f314c018ffaaa3f6628d1
@@ -369,6 +426,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 32ac6d56e9de690bc13f05d8879f3742
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RankingManager
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -443,7 +506,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: d410d854157b7b4c3233d2e0afb4a056
+      Hash: c21f6d80e928431f9dcce86ce8438b5a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraController2
@@ -467,6 +530,12 @@ ScriptsOnlyBuild:
     className: ExampleTrack
   - hash:
       serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -477,6 +546,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineOrbitalTransposer
+  - hash:
+      serializedVersion: 2
+      Hash: 8d177d1a5c42aa094e99857b4a23a222
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndRound
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -701,6 +776,12 @@ ScriptsOnlyBuild:
     className: ExampleGrowingRoot
   - hash:
       serializedVersion: 2
+      Hash: 824e8d4cb47ffd88ddf959dbd4526585
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DynamicJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 1e3d6222ff533d213aab144eb854a53b
     assemblyName: Cinemachine.dll
     namespaceName: 
@@ -711,6 +792,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineVirtualCamera
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixedJoystick
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
@@ -777,6 +864,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 528e9858840cb8370d93939fff6b42d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickPlayerExample
   - hash:
       serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
@@ -851,6 +944,12 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
+      Hash: 925a9bb2d7bff0177feeb0beef67200f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AIcontroller
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -921,6 +1020,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineHardLockToTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 9dac16f3efc511835ac976dfae55f580
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VariableJoystick
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
