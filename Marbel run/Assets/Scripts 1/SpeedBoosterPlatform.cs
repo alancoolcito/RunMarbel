@@ -10,12 +10,13 @@ public class SpeedBoosterPlatform : MonoBehaviour
     {
         if ((other.gameObject.tag == "Player") || (other.gameObject.tag == "AI"))
         {
+            float mass = other.attachedRigidbody.mass;
             var tempRigid = other.attachedRigidbody;
             if (tempRigid != null)
             {
                // rb.AddForce(boost, 0, 0, ForceMode.Impulse);
                // rbAI.AddForce(boost, 0, 0, ForceMode.Impulse);
-                 other.attachedRigidbody.AddForce(boost, 0, 0, ForceMode.Impulse);
+                 other.attachedRigidbody.AddForce(boost*mass, 0, 0, ForceMode.Impulse);
             }
         }
     }    

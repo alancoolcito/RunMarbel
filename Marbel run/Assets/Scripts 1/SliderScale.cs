@@ -32,32 +32,30 @@ public class SliderScale : MonoBehaviour
        // followCamera.transform.eulerAngles = new Vector3(target.transform.rotation.x, target.transform.rotation.y, 0);
 
         scaleVector = new Vector3(scaleValue, scaleValue, scaleValue);
-
-        Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
-
+        Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue); 
         newThrust = thrust / scaleValue;
-        rb.mass = scaleValue * 12;
-
+        rb.mass = scaleValue * 10;
+        Physics.gravity = new Vector3(0, -scaleValue * 8, 0);
         rb.AddForce(followCamera.transform.forward * newThrust/5, ForceMode.VelocityChange);
 
         if (joystick.Vertical >= .1f && scaleValue <= 6f)
         {
-            scaleValue += 0.008f;
+            scaleValue += 0.08f;
         }
 
         if (joystick.Vertical <= -.1f && scaleValue >= 1f)
         {
-            scaleValue -= 0.008f;
+            scaleValue -= 0.08f;
         }
 
         if(joystick.Horizontal >= .8)
         {
-            rb.AddForce(followCamera.transform.right * 3f, ForceMode.Acceleration);
+            rb.AddForce(followCamera.transform.right * 4f, ForceMode.Acceleration);
         }
 
         if (joystick.Horizontal <= -.8)
         {
-            rb.AddForce(followCamera.transform.right * -3f, ForceMode.Acceleration);
+            rb.AddForce(followCamera.transform.right * -4f, ForceMode.Acceleration);
         }
     }
 
