@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Gravity : MonoBehaviour
 {
-    public void OnTriggerEnter(Collider other)
+    // Start is called before the first frame update
+    void Start()
     {
-        if ((other.gameObject.tag == "Player") || (other.gameObject.tag == "AI"))
-        {
-            Physics.gravity = new Vector3(0, -100F, 0);
-        }
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

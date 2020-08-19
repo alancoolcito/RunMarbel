@@ -657,8 +657,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6320761025101198649}
-  m_LocalRotation: {x: 0.9671383, y: 0.0010454897, z: 0.0088765025, w: -0.25409374}
-  m_LocalPosition: {x: -0.06226909, y: -2.3657017, z: 3.1847079}
+  m_LocalRotation: {x: 0.7049886, y: -0.17884234, z: -0.66464794, w: -0.17102534}
+  m_LocalPosition: {x: -40.949574, y: 21.604898, z: -89.1283}
   m_LocalScale: {x: 0.25000006, y: 0.24999997, z: 0.25}
   m_Children: []
   m_Father: {fileID: 6320761025397192054}
@@ -688,8 +688,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 5000
-  field of view: 55
+  far clip plane: 3000
+  field of view: 67
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -898,6 +898,7 @@ GameObject:
   - component: {fileID: 6320761025397192048}
   - component: {fileID: 6320761025397192049}
   - component: {fileID: 6320761025397192053}
+  - component: {fileID: 1526444071191875712}
   - component: {fileID: 6320761025397192052}
   m_Layer: 0
   m_Name: Sphere
@@ -949,6 +950,7 @@ MonoBehaviour:
   Sphere: {fileID: 6320761025397192050}
   Marble: {fileID: 6320761023974004832}
   followCamera: {fileID: 6320761025101198654}
+  offset: 2
 --- !u!23 &6320761025397192048
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1017,6 +1019,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1526444071191875712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6320761025397192050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee1811631c544bb4593985134a1ef40f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravity: 0
+  rb: {fileID: 6320761025397192053}
 --- !u!135 &6320761025397192052
 SphereCollider:
   m_ObjectHideFlags: 0
