@@ -22,7 +22,7 @@ public class SliderScale : MonoBehaviour
 
     void Start()
     {
-        Physics.gravity = new Vector3(0, -12F, 0);
+        Physics.gravity = new Vector3(0, -8F, 0);
         //Sphere.transform.localScale = new Vector3(3f, 3f, 3f);
     }
 
@@ -34,9 +34,9 @@ public class SliderScale : MonoBehaviour
         scaleVector = new Vector3(scaleValue, scaleValue, scaleValue);
         Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue); 
         newThrust = thrust / scaleValue;
-        rb.mass = scaleValue * 15;
+        rb.mass = scaleValue * 20;
         Physics.gravity = new Vector3(0, -scaleValue * 8, 0);
-        rb.AddForce(followCamera.transform.forward * newThrust/1.5f, ForceMode.VelocityChange);
+        rb.AddForce(followCamera.transform.forward * newThrust/1.8f, ForceMode.VelocityChange);
 
         if (joystick.Vertical >= .1f && scaleValue <= 6f)
         {
