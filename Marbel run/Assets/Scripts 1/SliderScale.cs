@@ -32,30 +32,38 @@ public class SliderScale : MonoBehaviour
        // followCamera.transform.eulerAngles = new Vector3(target.transform.rotation.x, target.transform.rotation.y, 0);
 
         scaleVector = new Vector3(scaleValue, scaleValue, scaleValue);
-        Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue); 
+        Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
+        if (scaleValue >= 3)
+        {
+            thrust = 1;
+        }
+        else
+        {
+            thrust = 0.6f;
+        }
         newThrust = thrust / scaleValue;
         rb.mass = scaleValue * 20;
         Physics.gravity = new Vector3(0, -scaleValue * 8, 0);
         rb.AddForce(followCamera.transform.forward * newThrust/1.8f, ForceMode.VelocityChange);
 
-        if (joystick.Vertical >= .1f && scaleValue <= 6f)
+        if (joystick.Vertical >= .25f && scaleValue <= 6f)
         {
-            scaleValue += 0.08f;
+            scaleValue += 0.04f;
         }
 
-        if (joystick.Vertical <= -.1f && scaleValue >= 1f)
+        if (joystick.Vertical <= -.25f && scaleValue >= 2f)
         {
-            scaleValue -= 0.08f;
+            scaleValue -= 0.03f;
         }
 
         if(joystick.Horizontal >= .8)
         {
-            rb.AddForce(followCamera.transform.right * 4f, ForceMode.Acceleration);
+            rb.AddForce(followCamera.transform.right * 6f, ForceMode.Acceleration);
         }
 
         if (joystick.Horizontal <= -.8)
         {
-            rb.AddForce(followCamera.transform.right * -4f, ForceMode.Acceleration);
+            rb.AddForce(followCamera.transform.right * -6f, ForceMode.Acceleration);
         }
     }
 
