@@ -20,10 +20,13 @@ public class SliderScale : MonoBehaviour
     //public Transform target;
     public float offset = 2f;
 
+    public Renderer renderer;
+
     void Start()
     {
         Physics.gravity = new Vector3(0, -8F, 0);
         //Sphere.transform.localScale = new Vector3(3f, 3f, 3f);
+        renderer.material = ChangeBall.PlayerMat;
     }
 
     void Update()
