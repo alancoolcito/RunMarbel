@@ -5,7 +5,11 @@ using UnityEngine;
 
 public class SpeedBoosterPlatform : MonoBehaviour
 {
-    public float boost = 1000f;
+    [SerializeField]
+    private float boost = 1000f;
+    [SerializeField]
+    private Camera mainCam;
+
     public void OnTriggerEnter(Collider other)
     {
         if ((other.gameObject.tag == "Player") || (other.gameObject.tag == "AI"))
@@ -16,7 +20,7 @@ public class SpeedBoosterPlatform : MonoBehaviour
             {
                // rb.AddForce(boost, 0, 0, ForceMode.Impulse);
                // rbAI.AddForce(boost, 0, 0, ForceMode.Impulse);
-                 other.attachedRigidbody.AddForce(boost*mass, 0, 0, ForceMode.Impulse);
+                 other.attachedRigidbody.AddForce(mainCam.transform.forward * boost, ForceMode.Acceleration);
             }
         }
     }    

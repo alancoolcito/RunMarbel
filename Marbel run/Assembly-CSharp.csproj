@@ -95,6 +95,7 @@
     <Compile Include="Assets\Scripts 1\Gravity.cs" />
     <Compile Include="Assets\Scripts 1\MainMenu.cs" />
     <Compile Include="Assets\Scripts 1\MarbleManager.cs" />
+    <Compile Include="Assets\Scripts 1\MetuteletSwing.cs" />
     <Compile Include="Assets\Scripts 1\RankingManager.cs" />
     <Compile Include="Assets\Scripts 1\SliderScale.cs" />
     <Compile Include="Assets\Scripts 1\SpeedBoosterPlatform.cs" />
