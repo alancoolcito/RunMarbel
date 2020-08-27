@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts 1\Attractor.cs" />
      <Compile Include="Assets\Scripts 1\CameraController.cs" />
      <Compile Include="Assets\Scripts 1\CameraController2.cs" />
+     <Compile Include="Assets\Scripts 1\ChangeBall.cs" />
      <Compile Include="Assets\Scripts 1\Destroyer.cs" />
      <Compile Include="Assets\Scripts 1\EndRound.cs" />
      <Compile Include="Assets\Scripts 1\Gravity.cs" />
