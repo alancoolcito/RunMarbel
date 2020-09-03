@@ -20,7 +20,7 @@ public class SpeedBoosterPlatform : MonoBehaviour
             {
                // rb.AddForce(boost, 0, 0, ForceMode.Impulse);
                // rbAI.AddForce(boost, 0, 0, ForceMode.Impulse);
-                 other.attachedRigidbody.AddForce(mainCam.transform.forward * boost, ForceMode.Acceleration);
+                 other.attachedRigidbody.AddForce(mainCam.transform.forward * boost, ForceMode.Impulse);
             }
         }
     }    

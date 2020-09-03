@@ -61,12 +61,12 @@ public class SliderScale : MonoBehaviour
 
         if(joystick.Horizontal >= .8)
         {
-            rb.AddForce(followCamera.transform.right * 6f, ForceMode.Acceleration);
+            rb.AddForce(followCamera.transform.right * 8f, ForceMode.Acceleration);
         }
 
         if (joystick.Horizontal <= -.8)
         {
-            rb.AddForce(followCamera.transform.right * -6f, ForceMode.Acceleration);
+            rb.AddForce(followCamera.transform.right * -8f, ForceMode.Acceleration);
         }
     }
 
