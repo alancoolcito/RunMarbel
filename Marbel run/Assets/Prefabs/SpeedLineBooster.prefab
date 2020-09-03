@@ -54,9 +54,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa47830ab3597b418e2a31ad7475af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boost: 800
-  rb: {fileID: 0}
-  rbAI: {fileID: 0}
+  boost: 0
+  mainCam: {fileID: 0}
 --- !u!23 &34028550302893231
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -107,5 +106,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 12.867518, z: 1}
+  m_Center: {x: 0, y: 5.9337597, z: 0}
