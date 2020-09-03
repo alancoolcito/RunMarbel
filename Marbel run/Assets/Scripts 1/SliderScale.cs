@@ -17,7 +17,6 @@ public class SliderScale : MonoBehaviour
     private GameObject Sphere;
     public GameObject Marble;
     public Camera followCamera;
-    //public Transform target;
     public float offset = 2f;
 
     public Renderer renderer;
@@ -25,24 +24,22 @@ public class SliderScale : MonoBehaviour
     void Start()
     {
         Physics.gravity = new Vector3(0, -8F, 0);
-        //Sphere.transform.localScale = new Vector3(3f, 3f, 3f);
         renderer.material = ChangeBall.PlayerMat;
     }
 
     void Update()
     {
-        //followCamera.transform.position = new Vector3(target.position.x-offset, target.position.y, target.position.z);
-       // followCamera.transform.eulerAngles = new Vector3(target.transform.rotation.x, target.transform.rotation.y, 0);
+        
 
         scaleVector = new Vector3(scaleValue, scaleValue, scaleValue);
         Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
         if (scaleValue >= 3)
         {
-            thrust = 1;
-        }
-        else
-        {
             thrust = 0.6f;
+        }
+        else if(scaleValue < 3 )
+        {
+            thrust = 1f;
         }
         newThrust = thrust / scaleValue;
         rb.mass = scaleValue * 20;
@@ -69,10 +66,4 @@ public class SliderScale : MonoBehaviour
             rb.AddForce(followCamera.transform.right * -8f, ForceMode.Acceleration);
         }
     }
-
-    //public void setScale(float scale)
-    //{
-    //    scaleValue = scale;
-    //    rb.mass = scale*10; 
-    //}
 }

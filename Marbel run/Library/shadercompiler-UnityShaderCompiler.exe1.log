@@ -1,2 +1,34 @@
-Base path: 'C:/Program Files/2019.4.5f1/Editor/Data', plugins path 'C:/Program Files/2019.4.5f1/Editor/Data/PlaybackEngines'
+Base path: 'C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 4 at Fireworks3.vfx(16): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/RenderPipeline/Universal/VFXDefines.hlsl'
+  api=4 insize=7216 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at Fireworks3.vfx(18): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/RenderPipeline/Universal/VFXDefines.hlsl'
+  api=4 insize=7275 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 18 at (18): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/RenderPipeline/Universal/VFXDefines.hlsl'
+  error: 2 plat 18 at (83): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/Common/VFXCommonCompute.hlsl'
+  error: 2 plat 18 at (84): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/VFXCommon.hlsl'
+  api=18 insize=9201 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at Ball.vfx(17): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/RenderPipeline/Universal/VFXDefines.hlsl'
+  api=4 insize=8204 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 18 at (19): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/RenderPipeline/Universal/VFXDefines.hlsl'
+  error: 2 plat 18 at (79): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/Common/VFXCommonCompute.hlsl'
+  error: 2 plat 18 at (80): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/VFXCommon.hlsl'
+  api=18 insize=7119 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at Fireworks2.vfx(18): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/RenderPipeline/Universal/VFXDefines.hlsl'
+  api=4 insize=7616 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at Fireworks2.vfx(19): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/RenderPipeline/Universal/VFXDefines.hlsl'
+  api=4 insize=7453 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at Portal1.vfx(14): failed to open source file: 'Packages/com.unity.visualeffectgraph/Shaders/RenderPipeline/Universal/VFXDefines.hlsl'
+  api=4 insize=7281 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=9103 outsize=2780 ok=1
 Cmd: initializeCompiler

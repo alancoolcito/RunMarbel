@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CheckPoint
   - AI
+  - FxTemporaire
+  - Track
   layers:
   - Default
   - TransparentFX
