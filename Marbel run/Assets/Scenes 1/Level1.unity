@@ -12499,7 +12499,7 @@ PrefabInstance:
     - target: {fileID: 6320761024465508749, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.086742945
+      value: -0.08674293
       objectReference: {fileID: 0}
     - target: {fileID: 6320761024465508749, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
@@ -12509,7 +12509,7 @@ PrefabInstance:
     - target: {fileID: 6320761024465508749, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.07458298
+      value: 0.074582964
       objectReference: {fileID: 0}
     - target: {fileID: 6320761024465508749, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
@@ -12549,7 +12549,7 @@ PrefabInstance:
     - target: {fileID: 6320761024930436595, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.67432874
+      value: -0.6743287
       objectReference: {fileID: 0}
     - target: {fileID: 6320761024930436595, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
@@ -12564,7 +12564,7 @@ PrefabInstance:
     - target: {fileID: 6320761024930436595, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.15865472
+      value: 0.15865469
       objectReference: {fileID: 0}
     - target: {fileID: 6320761024930436595, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
@@ -12599,7 +12599,7 @@ PrefabInstance:
     - target: {fileID: 6320761025101198648, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0057491628
+      value: -0.0057491823
       objectReference: {fileID: 0}
     - target: {fileID: 6320761025101198648, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
@@ -12614,7 +12614,7 @@ PrefabInstance:
     - target: {fileID: 6320761025101198648, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.020239998
+      value: -0.020240068
       objectReference: {fileID: 0}
     - target: {fileID: 6320761025101198648, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
@@ -12794,7 +12794,7 @@ PrefabInstance:
     - target: {fileID: 6320761025397192059, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}
       propertyPath: thrust
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6320761025397192059, guid: 813d7b6f52423d743bdd1910c254f7dc,
         type: 3}

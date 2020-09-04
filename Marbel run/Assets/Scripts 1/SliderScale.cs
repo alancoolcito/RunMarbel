@@ -23,7 +23,7 @@ public class SliderScale : MonoBehaviour
 
     void Start()
     {
-        Physics.gravity = new Vector3(0, -8F, 0);
+        Physics.gravity = new Vector3(0, -10F, 0);
         renderer.material = ChangeBall.PlayerMat;
     }
 
@@ -33,16 +33,16 @@ public class SliderScale : MonoBehaviour
 
         scaleVector = new Vector3(scaleValue, scaleValue, scaleValue);
         Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
-        //if (scaleValue >= 3)
-        //{
-        //    thrust = 0.6f;
-        //}
-        //else if(scaleValue < 3 )
-        //{
-        //    thrust = 1f;
-        //}
+        if (scaleValue >= 3)
+        {
+            thrust = 1f;
+        }
+        else if (scaleValue < 3)
+        {
+            thrust = 4f;
+        }
         newThrust = thrust / scaleValue;
-        rb.mass = scaleValue * 40;
+        rb.mass = scaleValue * 20;
         Physics.gravity = new Vector3(0, -scaleValue * 8, 0);
         rb.AddForce(followCamera.transform.forward * newThrust/1.8f, ForceMode.VelocityChange);
 
@@ -58,12 +58,12 @@ public class SliderScale : MonoBehaviour
 
         if(joystick.Horizontal >= .3)
         {
-            rb.AddForce(followCamera.transform.right * 8f, ForceMode.Acceleration);
+            rb.AddForce(followCamera.transform.right * 15f, ForceMode.Acceleration);
         }
 
         if (joystick.Horizontal <= -.3)
         {
-            rb.AddForce(followCamera.transform.right * -8f, ForceMode.Acceleration);
+            rb.AddForce(followCamera.transform.right * -15f, ForceMode.Acceleration);
         }
     }
 }
