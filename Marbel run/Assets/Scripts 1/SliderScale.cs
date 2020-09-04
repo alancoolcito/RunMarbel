@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SliderScale : MonoBehaviour
 {
-    public float thrust = 5f;
+    public float thrust;
     public Rigidbody rb;
     private float scaleValue = 4f;
     private Vector3 scaleVector;
@@ -33,14 +33,14 @@ public class SliderScale : MonoBehaviour
 
         scaleVector = new Vector3(scaleValue, scaleValue, scaleValue);
         Sphere.transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
-        if (scaleValue >= 3)
-        {
-            thrust = 0.6f;
-        }
-        else if(scaleValue < 3 )
-        {
-            thrust = 1f;
-        }
+        //if (scaleValue >= 3)
+        //{
+        //    thrust = 0.6f;
+        //}
+        //else if(scaleValue < 3 )
+        //{
+        //    thrust = 1f;
+        //}
         newThrust = thrust / scaleValue;
         rb.mass = scaleValue * 20;
         Physics.gravity = new Vector3(0, -scaleValue * 8, 0);
@@ -48,12 +48,12 @@ public class SliderScale : MonoBehaviour
 
         if (joystick.Vertical >= .25f && scaleValue <= 6f)
         {
-            scaleValue += 0.04f;
+            scaleValue += 0.1f;
         }
 
         if (joystick.Vertical <= -.25f && scaleValue >= 2f)
         {
-            scaleValue -= 0.03f;
+            scaleValue -= 0.1f;
         }
 
         if(joystick.Horizontal >= .8)
