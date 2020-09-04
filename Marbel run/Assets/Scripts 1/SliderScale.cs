@@ -42,7 +42,7 @@ public class SliderScale : MonoBehaviour
         //    thrust = 1f;
         //}
         newThrust = thrust / scaleValue;
-        rb.mass = scaleValue * 20;
+        rb.mass = scaleValue * 40;
         Physics.gravity = new Vector3(0, -scaleValue * 8, 0);
         rb.AddForce(followCamera.transform.forward * newThrust/1.8f, ForceMode.VelocityChange);
 
@@ -56,12 +56,12 @@ public class SliderScale : MonoBehaviour
             scaleValue -= 0.1f;
         }
 
-        if(joystick.Horizontal >= .8)
+        if(joystick.Horizontal >= .3)
         {
             rb.AddForce(followCamera.transform.right * 8f, ForceMode.Acceleration);
         }
 
-        if (joystick.Horizontal <= -.8)
+        if (joystick.Horizontal <= -.3)
         {
             rb.AddForce(followCamera.transform.right * -8f, ForceMode.Acceleration);
         }
